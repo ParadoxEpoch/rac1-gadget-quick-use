@@ -1,0 +1,45 @@
+{
+  "format": 2,
+  "id": "gadget-quick-use",
+  "name": "Gadget Quick Use",
+  "version": "1.0.0",
+  "author": "ParadoxEpoch",
+  "description": "Use the Swingshot, Trespasser, and Hydrodisplacer without equipping them first, like in later Ratchet & Clank games.",
+  "license": "MIT",
+  "homepage": "https://github.com/ParadoxEpoch/rac1-gadget-quick-use",
+  "api": "1.12",
+  "games": { "rac1": ["pal", "ntsc"] },
+  "hooks": [
+    "rac1.moby.trespasser_puzzle.update",
+    "rac1.moby.hydrodisplacer_pad.update",
+    "rac1.moby.moby341.update"
+  ],
+  "settings": [
+    {
+      "key": "trigger",
+      "name": "Use button (Trespasser & Hydrodisplacer)",
+      "type": "choice",
+      "default": "triangle",
+      "choices": [
+		{ "value": "triangle", "name": "Triangle" },
+        { "value": "circle", "name": "Circle" },
+        { "value": "both", "name": "Both" }
+      ],
+      "description": "Which button uses the gadget on a Trespasser pad or Hydrodisplacer faucet. Triangle leaves Circle for a weapon or gadget you equipped yourself and is the RaC2 style. Both is similar to Triangle, but also accepts Circle. The Swingshot ignores this setting, it always uses Circle."
+    },
+    {
+      "key": "skip_camera",
+      "name": "Skip Hydrodisplacer camera",
+      "type": "bool",
+      "default": false,
+      "description": "Skip the scripted camera after the Hydrodisplacer attaches. The tank still fills or empties."
+    },
+	{
+	  "key": "swingshot",
+	  "name": "Swingshot quick-use",
+	  "type": "bool",
+	  "default": true,
+	  "description": "Attach to a Swingshot versatarget without equipping it first. The previous weapon comes back when the swing ends."
+	}
+  ]
+}
