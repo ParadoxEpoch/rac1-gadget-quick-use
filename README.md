@@ -1,4 +1,4 @@
-# Gadget Quick Use
+# Auto Use Gadgets
 
 OpenRAC mod that allows you to use the Swingshot, Trespasser, and Hydrodisplacer without equipping them first, like in later Ratchet & Clank games.
 

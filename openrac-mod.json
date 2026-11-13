@@ -1,8 +1,8 @@
 {
   "format": 2,
   "id": "gadget-quick-use",
-  "name": "Gadget Quick Use",
-  "version": "1.0.0",
+  "name": "Auto Use Gadgets",
+  "version": "1.0.1",
   "author": "ParadoxEpoch",
   "description": "Use the Swingshot, Trespasser, and Hydrodisplacer without equipping them first, like in later Ratchet & Clank games.",
   "license": "MIT",

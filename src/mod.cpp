@@ -1121,4 +1121,4 @@ void load(openrac::Mod& mod) {
 
 }  // namespace
 
-OPENRAC_MOD_CPP("gadget-quick-use", "0.1.0", load)
+OPENRAC_MOD_CPP("gadget-quick-use", "1.0.1", load)
